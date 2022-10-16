@@ -23,6 +23,15 @@ app.get('/apps/category/:category', async (req, res) => {
     res.json(find);
 })
 
+app.get('/apps/user/:shared', async (req, res) => {
+    const response = await axios.get(process.env.DATABASE_URL);
+    const data = response.data
+    const param = req.params.shared
+    console.log(param)
+    const find = response.data.filter(d => d.shared === param);
+    res.json(find);
+})
+
 app.get('/apps/search/:search', async (req, res) => {
     const response = await axios.get(process.env.DATABASE_URL);
     const data = response.data

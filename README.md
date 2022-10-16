@@ -9,6 +9,8 @@ Paths:
 
 `/apps/category/(category here)`
 
+`/apps/user/(username here)`
+
 `/apps/search/(search anything here)`
 
 `/apps/id/(id here)`
