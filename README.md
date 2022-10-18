@@ -14,3 +14,5 @@ Paths:
 `/apps/search/(search anything here)`
 
 `/apps/id/(id here)`
+
+`/categories`

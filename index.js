@@ -13,6 +13,10 @@ app.get('/apps', async (req, res) => {
     })
     res.send(sorted)
 })
+app.get('/categories', async (req, res) => {
+    const response = await axios.get(process.env.DATABASE_CATEGORIES_URL);
+    res.send(sorted)
+})
 
 app.get('/apps/category/:category', async (req, res) => {
     const response = await axios.get(process.env.DATABASE_URL);
