@@ -15,7 +15,7 @@ app.get('/apps', async (req, res) => {
 })
 app.get('/categories', async (req, res) => {
     const response = await axios.get(process.env.DATABASE_CATEGORIES_URL);
-    res.send(response)
+    res.send(response.data)
 })
 
 app.get('/apps/category/:category', async (req, res) => {
